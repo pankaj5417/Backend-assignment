@@ -1,0 +1,30 @@
+
+1. db.users.insert([{"id":5,"first_name":"Leland","last_name":"Lenglet","email":"llenglet4@hhs.gov","gender":"Genderqueer"}
+
+
+
+2. db.users.insertMany([{"id":5,"first_name":"Leland","last_name":"Lenglet","email":"llenglet4@hhs.gov","gender":"Genderqueer"},
+   {"id":6,"first_name":"Scarlet","last_name":"Haglinton","email":"shaglinton5@chron.com","gender":"Female"},  
+   {"id":7,"first_name":"Gussy","last_name":"Crosson","email":"gcrosson6@clickbank.net","gender":"Bigender"},   
+  {"id":8,"first_name":"Robenia","last_name":"McConville","email":"rmcconville7@ovh.net","gender":"Female"},   
+  {"id":9,"first_name":"Galvan","last_name":"Normanville","email":"gnormanville8@jiathis.com","gender":"Genderqueer"},    
+ {"id":10,"first_name":"Shelia","last_name":"Semens","email":"ssemens9@themeforest.net","gender":"Female"}, 
+    {"id":11,"first_name":"Gibb","last_name":"Brandoni","email":"gbrandonia@google.fr","gender":"Genderfluid"},  
+   {"id":12,"first_name":"Nicolea","last_name":"Kilsby","email":"nkilsbyb@ucoz.ru","gender":"Female"},   
+  {"id":13,"first_name":"Nataniel","last_name":"Glowach","email":"nglowachc@twitpic.com","gender":"Polygender"},  
+   {"id":14,"first_name":"Buck","last_name":"Prisk","email":"bpriskd@over-blog.com","gender":"Genderfluid"}])
+ 
+3.db.users.find({})
+
+4. db.users.findOne({})
+
+5. db.users.update({ "_id" : ObjectId("619e0c96034bbe2941ca1e9f")},{ $set: {first_name:"Sunsilk", gender:"Female",id:1}})
+ 
+6. db.users.updateMany({ gender:"Female"},{ $set: { gender:"F"}})
+
+7. db.users.deleteOne({gender:"Bigender"})
+
+8. db.users.deleteMany({gender:"F"})
+
+
+9. db.users.drop()
